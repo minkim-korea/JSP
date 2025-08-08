@@ -28,7 +28,11 @@
 			</tr>
 			<tr>
 			    <td>패스워드</td>
-			    <td><%= request.getParameter("pw") %></td>
+			    <td><%= request.getParameter("pw1") %></td>
+			</tr>
+				<tr>
+			    <td>이메일</td>
+			    <td><%= request.getParameter("mail_id") %></td>
 			</tr>
 			<tr>
 			    <td>성별</td>

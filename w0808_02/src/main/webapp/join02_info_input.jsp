@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%--화살표함수 비밀번호일치불일치 스크립트 --%>
+    <%--DoForm2 에 join02 input~ 를  이름아이디 비밀번호 이메일 성별 관심사 받아서  출력받기  --%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -47,7 +48,7 @@
 		
 		
 		<section>
-			<form name="agree" method="get" action="join03_success.html">
+			<form name="agree" method="post" action="./doForm.jsp">
 				<div id="subBanner"></div>
 				<div id="locationN">
 					<ul>
@@ -357,7 +358,7 @@
 					</dl>
 					<dl id="join_interests_dl">
 						<dt>
-							<label for="">관심사</label>
+							<label for="hobby">관심사</label>
 						</dt>
 						<dd>
 							<ul>
