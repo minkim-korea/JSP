@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+    <%--화살표함수 비밀번호일치불일치 스크립트 --%>
 <!DOCTYPE html>
 <html>
 	<head>
