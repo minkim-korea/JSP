@@ -12,21 +12,21 @@
 		</style>
 	</head>
 	<body>
-	<script>
-	   if( <%=request.getParameter("loginCheck")%> != null){
-		   alert("아이디 또는 패스워드가 일치하지 않습니다.");
-	   }
-	</script>
-	<h2>로그인</h2>
-	<form action="./loginOk.jsp">
+	
+	<h2>회원가입</h2>
+	<form action="./memberOk2.jsp">
 		<label>아이디</label>
 		<input type="text" name="id" ><br>
 		<label>패스워드</label>
 		<input type="text" name="pw"><br>
 		<label>닉네임</label>
 		<input type="text" name="nicName"><br>
-		<label>아이디저장</label>
-		<input type="checkbox" name="checkId" value="1" ><br>
+		<%
+		  session.setAttribute("session_id", "aaa");
+		  session.setAttribute("session_name", "홍길동");
+		  session.setAttribute("session_nicName", "길동스");
+		%>
+		
 		<input type="submit" value="전송"><br>
 	</form>
 	
